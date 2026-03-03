@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users info from api</title>
+
+    <style>
+        #users-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            max-width: 1160px0;
+            margin:50px auto;
+            
+        }
+
+        .user-card{
+            background-color: rgb(200, 233, 222);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px 0 rgb(175, 174, 174);
+            
+        }
+        span{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="loadUsers()">Load Users</button>
+    <section id="users-container">
+      
+    </section>
+
+    <script src="users.js"></script>
+</body>
+</html>

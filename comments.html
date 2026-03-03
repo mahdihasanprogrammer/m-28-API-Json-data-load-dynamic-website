@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Api</title>
+
+     <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        button{
+            width: 85%;
+            display: block;
+            margin: 10px auto;
+            padding: 16px;
+            border-radius: 10px;
+            border:none;
+            background-color: rgb(84, 244, 191);
+            font-size: 24px;
+            cursor: pointer;
+        }
+        #comments-container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap:20px;
+            margin: 50px auto;
+            max-width: 1160px;
+        }
+        .comment-card{
+            background-color:  rgb(229, 252, 245);
+            border:2px solid rgb(231, 224, 224);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px 0 rgb(237, 234, 234);
+
+        }
+        .comment-card span{
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+    <button onclick="loadComments()">Load comments</button>
+
+    <section id="comments-container">
+        
+    </section>
+
+    <script src="comments.js"></script>
+</body>
+</html>
